@@ -1,0 +1,94 @@
+html{
+    cursor: url(/jogo_mata_mosquito/img_jogo_mosquito/mata_mosca.png) 30 30, auto;
+}
+
+
+
+body{
+    background-image: url(/jogo_mata_mosquito/img_jogo_mosquito/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.mosquito1{
+    height: 50x;
+    width: 50px;
+    position: absolute;
+}
+
+.mosquito2{
+    height: 79px;
+    width: 79px;
+    position: absolute;
+}
+
+.mosquito3{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+
+
+.ladoA {
+	transform: scaleX(1);
+}
+
+.ladoB {
+	transform: scaleX(-1);
+}
+
+.painel{
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    bottom: 0px;
+    border-top:solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.vidas{
+    float: left;
+}
+
+.cronometro{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+}
+
+.row_botao{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.botao{
+    width: 100px;
+    background-color: #014401 ;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.botao_iniciar{
+    width: 120px;
+    background-color: red ;
+    text-transform: uppercase;
+    font-weight:bold;
+    border-radius: 20px;
+    
+}
+
+#nivel{
+    background-color: darkgoldenrod;
+    margin-bottom: 2px;
+    height: 25px;
+    width: 128px;
+    border-radius: 20px;
+}

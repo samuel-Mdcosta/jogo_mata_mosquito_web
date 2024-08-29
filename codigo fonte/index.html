@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Jogo Mata Mosquito</title>
+</head>
+<body>
+    
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="/jogo_mata_mosquito/img_jogo_mosquito/coracao_cheio.png">
+            <img id="v2" src="/jogo_mata_mosquito/img_jogo_mosquito/coracao_cheio.png">
+            <img id="v3" src="/jogo_mata_mosquito/img_jogo_mosquito/coracao_cheio.png">
+        </div>
+
+        <div class="cronometro">
+            <p>tempo restante: <span id="cronometro"></span></p>
+        </div>
+    </div>
+
+
+    <script src="script.js">
+        document.querySelector('#cronometro').innerHTML = tempo
+    </script>
+</body>
+</html>
