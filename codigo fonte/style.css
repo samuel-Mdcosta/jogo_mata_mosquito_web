@@ -1,11 +1,11 @@
 html{
-    cursor: url(/jogo_mata_mosquito/img_jogo_mosquito/mata_mosca.png) 30 30, auto;
+    cursor: url(/img_jogo_mosquito/mata_mosca.png) 30 30, auto;
 }
 
 
 
 body{
-    background-image: url(/jogo_mata_mosquito/img_jogo_mosquito/bg.jpg);
+    background-image: url(/img_jogo_mosquito/bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
