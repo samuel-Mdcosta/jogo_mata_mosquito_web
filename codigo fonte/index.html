@@ -5,24 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Jogo Mata Mosquito</title>
+ 
 </head>
 <body>
     
-    <div class="painel">
-        <div class="vidas">
-            <img id="v1" src="/codigo fonte/public/img_jogo_mosquito/coracao_cheio.png">
-            <img id="v2" src="/codigo fonte/public/img_jogo_mosquito/coracao_cheio.png">
-            <img id="v3" src="/codigo fonte/public/img_jogo_mosquito/coracao_cheio.png">
+    <div class="container">
+        <div class="row">
+            <div class="coluna">
+                <div class="centro">
+                    <img src="/codigo fonte/public/img_jogo_mosquito/game.png" >
+                </div>
+            </div>
         </div>
 
-        <div class="cronometro">
-            <p>tempo restante: <span id="cronometro"></span></p>
+        <div class="row">
+            <div class="cokuna">
+                <div class="centro">
+                    <select id="nivel">
+                        <option value=""> Selecione o nivel</option>
+                        <option value="normal"> Normal </option>
+                        <option value="dificil"> Dificil </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="coluna">
+                <div class="row_botao">
+                   <button type="button" class="botao_iniciar"  onclick='iniciarjogo()'>Iniciar Jogo</button>
+                </div>
+            </div>
         </div>
     </div>
-
-
-    <script src="script.js">
-        document.querySelector('#cronometro').innerHTML = tempo
+    <script>
+        function iniciarjogo(){
+        var nivel_jogo = document.getElementById('nivel').value
+    
+        if(nivel_jogo === ''){
+         alert("selecione um nivel")
+         return false
+        }
+        window.location.href = 'index.html?' + nivel_jogo
+    }
     </script>
+    
 </body>
 </html>
